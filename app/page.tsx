@@ -8,6 +8,7 @@ import Camp from "@/components/camp/Camp";
 import Testimonials from "@/components/testimonials/Testimonials";
 import Work from "@/components/work/Work";
 import Features from "@/components/features/Features";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function Home() {
       <Work />
       <Testimonials />
       <Features />
+      <Footer />
     </>
   );
 }
