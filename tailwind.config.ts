@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -8,6 +9,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundImage: {
+      pattern: "url('/pattern/2.png')",
+    },
     fontFamily: {
       popins: ["Poppins", "sans-serif"],
       pacifiko: ["Pacifico", "cursive"],
@@ -62,7 +66,14 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
 export default config;

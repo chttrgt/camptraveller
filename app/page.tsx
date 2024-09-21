@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -14,15 +15,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className="text-4xl"
-      data-aos="fade-down"
-      data-aos-once="true"
-      data-aos-delay="500"
-    >
-      <h1 className="font-popins">Camp</h1>
-      <h1 className="font-roboto">Camp</h1>
-      <h1 className="font-pacifiko">Camp</h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
