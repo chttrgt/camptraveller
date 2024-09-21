@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
 import Camp from "@/components/camp/Camp";
+import Testimonials from "@/components/testimonials/Testimonials";
+import Work from "@/components/work/Work";
 
 export default function Home() {
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Camp />
+      <Work />
+      <Testimonials />
     </>
   );
 }

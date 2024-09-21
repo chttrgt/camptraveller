@@ -91,6 +91,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .backy {
+    background-image: linear-gradient(153.68deg, #08d1b6 0%, #23b937 45.82%);
+  }
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -100,4 +104,26 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #0049b6 !important;
+  padding: 5px !important;
+}
+
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  /* background: #f0f0f0 !important; */
+  padding: 5px !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.7);
 }
