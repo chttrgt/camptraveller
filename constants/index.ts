@@ -5,3 +5,10 @@ export const NAV_LINKS = [
   { href: "/", key: "pricing", label: "Pricing", delay: "400" },
   { href: "/", key: "contact", label: "Contact", delay: "500" },
 ];
+
+export const PEOPLE_URL = [
+  "/users/1.png",
+  "/users/2.png",
+  "/users/3.png",
+  "/users/4.png",
+];
